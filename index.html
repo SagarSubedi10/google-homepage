@@ -1,12 +1,12 @@
 <html><head>
     <meta charset="utf-8">
-    <title>Google Home Page</title>
+    <title>Google</title>
     <link href="styles/reset.css" rel="stylesheet" type="text/css" media="all">
     <style>
         body {
         font-family: arial, sans-serif;
 }
-.top-bar-container{  
+.top-nav{  
         min-width: 181px;
         height: 30px;
         padding: 15px 15px 10px 0px;
@@ -24,13 +24,7 @@
         vertical-align: middle;
 }
 
-.product-button{
-        margin: 0 15px 0 0;
-        align-self: center;
-        opacity: 0.50;
-}
-
-.signin-button{
+.login{
         margin: 0 10px 0 0;
         font-weight: bold;
         text-decoration: none;
@@ -42,16 +36,13 @@
         background: -webkit-linear-gradient(top,#4387fd,#4683ea);
 }
 
-.signin-button:hover{
+.login:hover{
         opacity: 0.9;
 }
 
 
 .gmail-link:hover, .images-link:hover{
         text-decoration: underline;
-}
-.product-button:hover{
-        opacity: 1;
 }
 
 .google-logo{
@@ -138,7 +129,7 @@ footer{
         border-top: 1px solid #e4e4e4;
 }
 
-.left-footer-container{
+.bottom-left-nav{
         margin-left: 27px;
         float: left;
 }
@@ -164,23 +155,22 @@ footer{
 </head>
 <body>
     <header>
-            <div class="top-bar-container">
+            <div class="top-nav">
                     <a class="gmail-link" href="http://mail.google.com/">Gmail</a>
                     <a class="images-link" href="https://www.google.com/imghp">Images</a>
-                    <a class="product-button" href="https://www.google.com/intl/en/about/products?tab=ih" role="button"><img src="images/apps.svg" width="16px" height="16px" alt="Google apps"></a>
-                    <a class="signin-button" href="https://accounts.google.com/ServiceLogin?hl=en" role="button">Sign in</a>
+                    <a class="login" href="https://accounts.google.com/ServiceLogin?hl=en" role="button">Sign in</a>
             </div>
     </header>
-    <div class="empty-space" style="height: 145px;"></div>
+    <div class="spacer" style="height: 145px;"></div>
     <div class="google-logo">
             <img src="google.png" alt="google-logo">
     </div>
     <div style="height: 29px;"></div>
     <form margin:="" 0="" auto;"="">
             <div class="searchbox">
-                    <img id="search-icon" src="images/search.png" alt="search">
+                   
                     <input type="text" id="search-text" maxlength="2048" role="combobox">
-                    <img id="mic-icon" src="images/micro.jpg" alt="mic">
+                    
             </div>
             <div class="search-buttons-container">
                     <input type="button" class="search-buttons" value="Google Search">
@@ -188,17 +178,13 @@ footer{
             </div>
     </form>
     <footer>
-            <div class="left-footer-container">
+            <div class="bottom-left-nav">
                     <nav>
-                            <a class="footer-item" href="">
-                            Advertising</a>
+                            <a class="footer-item" href="https://ads.google.com/intl/en_us/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
                     
-                            <a class="footer-item" href="">Business</a>
-
-                            <a class="footer-item" href="">About</a>"
+                            <a class="footer-item" href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Business</a>
                     
-                            <a class="footer-item" href="">
-                            How Search works</a>                
+                            <a class="footer-item" href="https://www.google.com/search/howsearchworks/?fg=1">How Search works</a>                
                     </nav>
             </div>
 
