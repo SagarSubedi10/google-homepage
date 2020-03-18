@@ -2,6 +2,9 @@
 
     <head>
         <style>
+          .tester{
+            float: right;
+          }            
           nav{
             overflow: hidden;
             position: fixed;
@@ -31,15 +34,21 @@
             bottom: 0;
             width: 100%;
           }
+          .button{
+            background-color:blue;
+            color: white;              
+          }
         </style>
     </head>
 
     <body>
         <header>
             <nav>
+                <div class="tester"></div>
                 <a href="http://gmail.com/">Gmail</a>
                 <a href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a>
-                <a href="#signin"> <input type="button" value="Sign In"> </a>
+                <a href="https://myaccount.google.com/?utm_source=sign_in_no_continue"> <input type="button" value="Sign In" class="button"> </a>
+                </div>
             </nav>
         </header>
         <main>
@@ -51,12 +60,14 @@
             </div>
         </main>
         <footer>
-            <a href="#ad">Advertising</a>
-            <a href="#business">Business</a>
-            <a href="#search">How Search Works</a>
-            <a href="#privacy">Privacy</a>
-            <a href="#terms">Terms</a>
-            <a href="#settings">Settings</a>                        
+            <a href="https://ads.google.com/intl/en_us/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
+            <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Business</a>
+            <a href="https://www.google.com/search/howsearchworks/?fg=1">How Search Works</a>
+            <div class="tester">
+            <a href="https://policies.google.com/privacy?fg=1">Privacy</a>
+            <a href="https://policies.google.com/terms?fg=1">Terms</a>
+            <a href="#settings">Settings</a> 
+            </div>                       
         </footer>
     </body>
 
