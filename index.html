@@ -1,73 +1,69 @@
-<html>
-
-    <head>
-        <link href="sytles/reset.css" rel="stylesheet" type="text/css" media="all">
-        <style>
-          .tester{
-            float: right;
-          }            
-          nav{
-            overflow: hidden;
-            position: fixed;
-            top:0;
-            width: 100%;
-
-          }
-          main {
-            height: 100%;
-            width: 100%;
-            display: flex;
-            position: fixed;
-            align-items: center;
-            justify-content: center;
-            text-align:center;
-           }
-          /* main{
-            overflow:hidden;
-            position: fixed;
-            top:50%;
-            left:50%;
-            text-align:center;
-          }
-          */
-          footer {
-            overflow: hidden;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-          }
-
-        </style>
-    </head>
-
-    <body>
-        <header>
-            <nav>
-                <div class="tester"></div>
-                <a href="http://gmail.com/">Gmail</a>
-                <a href="https://www.google.com/imghp?hl=en&tab=wi&ogbl">Images</a>
-                <a href="https://myaccount.google.com/?utm_source=sign_in_no_continue"> <input type="button" value="Sign In" class="bluebutton"> </a>
-                </div>
-            </nav>
-        </header>
-        <main>
-            <div name="mid">
-            <img src="google.png" alt="google logo">
-            <p><input type="text" id="search"></p>
-            <input type="button" value="Google Search"> 
-            <input type="button" value="Im Feeling Lucky">
+<html><head>
+    <meta charset="utf-8">
+    <title>Google Home Page</title>
+    <link href="styles/reset.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header>
+            <div class="top-bar-container">
+                    <a class="gmail-link" href="http://mail.google.com/">Gmail</a>
+                    <a class="images-link" href="https://www.google.com/imghp">Images</a>
+                    <a class="product-button" href="https://www.google.com/intl/en/about/products?tab=ih" role="button"><img src="images/apps.svg" width="16px" height="16px" alt="Google apps"></a>
+                    <a class="signin-button" href="https://accounts.google.com/ServiceLogin?hl=en" role="button">Sign in</a>
             </div>
-        </main>
-        <footer>
-            <a href="https://ads.google.com/intl/en_us/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a>
-            <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Business</a>
-            <a href="https://www.google.com/search/howsearchworks/?fg=1">How Search Works</a>
-            <div class="tester">
-            <a href="https://policies.google.com/privacy?fg=1">Privacy</a>
-            <a href="https://policies.google.com/terms?fg=1">Terms</a>
-            <a href="#settings">Settings</a> 
-            </div>                       
-        </footer>
-    </body>
+    </header>
+    <div class="empty-space" style="height: 145px;"></div>
+    <div class="google-logo">
+            <img src="images/logo.png" alt="google-logo">
+    </div>
+    <div style="height: 29px;"></div>
+    <form margin:="" 0="" auto;"="">
+            <div class="searchbox">
+                    <img id="search-icon" src="images/search.png" alt="search">
+                    <input type="text" id="search-text" maxlength="2048" role="combobox">
+                    <img id="mic-icon" src="images/micro.jpg" alt="mic">
+            </div>
+            <div class="search-buttons-container">
+                    <input type="button" class="search-buttons" value="Google Search">
+                    <input type="button" class="search-buttons" value="I'm Feeling Lucky">
+            </div>
+    </form>
+    <footer>
+            <div class="left-footer-container">
+                    <nav>
+                            <a class="footer-item" href="">
+                            Advertising</a>
+                    
+                            <a class="footer-item" href="">Business</a>
 
-</html>
+                            <a class="footer-item" href="">About</a>"
+                    
+                            <a class="footer-item" href="">
+                            How Search works</a>                
+                    </nav>
+            </div>
+
+            <div class="right-footer-container">
+                    <nav>
+                            <a class="footer-item" href="https://policies.google.com/privacy?fg=1">
+                            Privacy</a>
+                                
+                            <a class="footer-item" href="https://policies.google.com/terms?fg=1">
+                            Terms</a>
+            
+                            <a class="footer-item" href="https://www.google.com/preferences?hl=en">
+                            Settings</a>
+                    </nav>
+            </div>
+    </footer>
+    
+    
+    
+    
+    <script src="scripts/main.js"></script>
+
+
+</body></html>
